@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Доктор Гаджет</title>
+
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles/slick.css" />
+	<link rel="stylesheet" type="text/css" href="styles/slick-theme.css" />
+	<link rel="stylesheet" href="styles/animate.css">
+	<!-- <link rel="stylesheet" href="styles/buttons.css"> -->
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/media.css">
+	<link rel="stylesheet" href="styles/grid.css">
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+	</script>
+</head>
+
+<body>
+	<div id="app">
+		<section id="header" class="header">
+			<nav class="nav">
+				<div class="container">
+					<div id="logo">
+						<a href="#header">
+							<img src="assets/imgs/header/logo-yellow.svg" alt="Доктор Гаджет">
+						</a>
+					</div>
+
+					<input class="menu-btn" type="checkbox" id="menu-btn" />
+					<label class="menu-icon" for="menu-btn" id="hamburger-menu">
+						<span class="navicon"></span>
+					</label>
+
+					<div id="main-nav" class="closed animated">
+
+						<ul class="nav-menu">
+							<li class="nav-menu__item">
+								<a href="#services">Услуги сервиса</a>
+							</li>
+							<li class="nav-menu__item">
+								<a href="#about">О сервисе</a>
+							</li>
+							<li class="nav-menu__item">
+								<a href="#reviews">Отзывы</a>
+							</li>
+							<li class="nav-menu__item">
+								<a href="#contacts">Контакты</a>
+							</li>
+						</ul>
+
+						<div class="tel">
+							<a href="tel:+7(985)614-03-58">+7 985 614-03-58</a>
+						</div>
+
+						<div class="social-block">
+							<div class="social-block__instagram">
+								<a href="#">
+									<img src="assets/imgs/header/instagram.svg" alt="instagram">
+								</a>
+							</div>
+							<div class="social-block__vk">
+								<a href="#">
+									<img src="assets/imgs/header/vk.svg" alt="vk">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<div class="header__slider">
+				<div class="fullscreen-slider">
+					<div class="fullscreen-slider__item fullscreen-slider__item_1">
+						<div class="container">
+							<div class="fullscreen-slider__text">
+								Ремонт <br />
+								телефонов планшетов <br />
+								ноутбуков и навигаторов <br />
+							</div>
+						</div>
+					</div>
+					<div class="fullscreen-slider__item fullscreen-slider__item_2">
+						<div class="container">
+							<div class="fullscreen-slider__text">
+								Ремонт <br />
+								телефонов планшетов <br />
+								ноутбуков и навигаторов <br />
+							</div>
+						</div>
+					</div>
+					<div class="fullscreen-slider__item fullscreen-slider__item_3">
+						<div class="container">
+							<div class="fullscreen-slider__text">
+								Замена дисплея на <br />
+								iPhone 7 + и ниже версий <br />
+								от 1300 руб.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="services" class="services">
+			<div class="container">
+				<h2 class="section-title section-title_light">
+					<span>Услуги сервиса</span>
+				</h2>
+				<div class="services-grid">
+					<div class="services-grid__item service-analysis">
+						<div class="service-name">Диагностика</div>
+						<div class="service-price">2000 р.</div>
+					</div>
+					<div class="services-grid__item service-battery">
+						<div class="service-name">Замена <br /> Аккумулатора</div>
+						<div class="service-price">2000 р.</div>
+					</div>
+					<div class="services-grid__item service-screen">
+						<div class="service-name">Замена <br /> Дисплея и <br /> Сенсора</div>
+						<div class="service-price">2000 р.</div>
+					</div>
+					<div class="services-grid__item services-slider">
+						<div class="services-slider__item">
+							<img src="assets/imgs/services/services_slide.jpg" alt="">
+							<div class="services-slider__text">Работа наших мастеров</div>
+						</div>
+						<div class="services-slider__item">
+							<img src="assets/imgs/services/services_slide.jpg" alt="">
+							<div class="services-slider__text">Работа наших мастеров</div>
+						</div>
+					</div>
+					<div class="services-grid__item service-case">
+						<div class="service-name">Замена <br /> Корпуса</div>
+						<div class="service-price">2000 р.</div>
+					</div>
+					<div class="services-grid__item service-charging">
+						<div class="service-name">Замена <br /> Разъема <br /> Зарядки</div>
+						<div class="service-price">2000 р.</div>
+					</div>
+					<div class="services-grid__item service-water-recovering">
+						<div class="service-name">Чистка после <br /> Поподания <br /> Влаги</div>
+						<div class="service-price">2000 р.</div>
+					</div>
+					<div class="services-grid__item service-motherboard">
+						<div class="service-name">Ремонт <br /> Материнской <br /> Платы</div>
+						<div class="service-price">2000 р.</div>
+					</div>
+					<div class="services-grid__item service-camera">
+						<div class="service-name">Замена <br /> Камеры</div>
+						<div class="service-price">2000 р.</div>
+					</div>
+					<div class="services-grid__item service-individual-service">
+						<div class="service-name">Индивидуальные <br /> Ремонтыне <br /> Работы</div>
+						<div class="service-price">2000 р.</div>
+					</div>
+					<div class="services-grid__item service-software">
+						<div class="service-name">Замена <br /> Программного <br /> Обеспечения</div>
+						<div class="service-price">2000 р.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about" id="about">
+			<div class="left-bg"></div>
+			<div class="container">
+				<h2 class="section-title">
+					<span>О сервисе</span>
+				</h2>
+				<div class="big-logo">
+					<img src="assets/imgs/header/logo-yellow.svg" alt="Доктор Гаджет">
+				</div>
+				<div class="service-description">
+					<h1 class="service-description__heading"> Сервисный центр Доктор Гаджет качественный ремонт техники
+					</h1>
+					<p class="service-description__text">При создании Сервисного центра Доктор Гаджет мы ставили себе
+						цель подарить нашим клиентам качественный сервис европейского уровня, ориентированный прежде
+						всего на высокое качество работы и при этом минимальные затраты Вашего времени. И на данный
+						момент все это нам удается ;)</p>
+				</div>
+				<div class="ask-question">
+					<h2 class="ask-question__text">Хотите задать вопрос мастеру?</h2>
+					<div class="yellow-btn">
+						<a id="ask" href="https://vk.com/im?sel=362614783" class="button" target="_blank">
+							Задать вопрос
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="right-bg"></div>
+		</section>
+		<section class="reviews" id="reviews">
+			<div class="container">
+				<h2 class="section-title">
+					<span>Отзывы клиентов</span>
+				</h2>
+			</div>
+			<div class="container flex-container">
+				<div id="reviews_container"></div>
+				<div class="yellow-btn">
+					<a id="leaveReview"
+						href="https://www.google.com/search?newwindow=1&safe=active&source=hp&ei=028vW_GhMeyP6ATv-a-4Cg&q=%D0%B4%D0%BE%D0%BA%D1%82%D0%BE%D1%80+%D0%B3%D0%B0%D0%B4%D0%B6%D0%B5%D1%82+%D0%BE%D1%80%D0%B5%D1%85%D0%BE%D0%B2%D0%BE-%D0%B7%D1%83%D0%B5%D0%B2%D0%BE&oq=%D0%B4%D0%BE%D0%BA%D1%82%D0%BE%D1%80+&gs_l=psy-ab.3.0.35i39k1j0i203k1l9.380.2936.0.4485.12.9.0.0.0.0.336.1137.2-2j2.4.0....0...1.1.64.psy-ab..8.4.1130.0..0.0.eWrufJVHHNY#lrd=0x414b1c6304fbde3d:0xf6974f034fe353c3,3,,,"
+						class="button" target="_blank">Оставить отзыв</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<h2 class="section-title">
+					<span>Контакты</span>
+				</h2>
+				<div class="map">
+					<div id="map"></div>
+				</div>
+				<div class="contacts-info">
+					<div class="contacts-info__item">
+						<div class="contacts-item-icon">
+							<img src="assets/imgs/contacts/maps.svg" alt="">
+						</div>
+						<div class="contacts-item-txt">
+							г.Орехово-Зуево, ул.Ленина,<br />
+							44аТЦ “Никольский” 1этаж.
+						</div>
+					</div>
+					<div class="contacts-info__item contacts-info__tel">
+						<div class="contacts-item-icon">
+							<img src="assets/imgs/contacts/phone.svg" alt="">
+						</div>
+						<div class="tel tel_footer">
+							<a href="tel:+7(985)614-03-58">+7 985 614-03-58</a></div>
+					</div>
+					<div class="contacts-info__item">
+						<div class="contacts-item-icon">
+							<img src="assets/imgs/contacts/time.png" alt="">
+						</div>
+						<div class="contacts-item-txt">Ежедневно с <br />10:00 до 19:00</div>
+					</div>
+				</div>
+				<div class="social-block social-block_footer">
+					<div class="social-block__instagram">
+						<a href="#">
+							<img src="assets/imgs/header/instagram.svg" alt="instagram">
+						</a>
+					</div>
+					<div class="social-block__vk">
+						<a href="#">
+							<img src="assets/imgs/header/vk.svg" alt="vk">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer-info">Работу сделала студия Spacetec</footer>
+	</div>
+
+	<div id="overlay" class="closed"></div>
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/slick.min.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&language=ru&libraries=places&callback=initMap"
+		async defer></script>
+	<script src="scripts/scripts.js"></script>
+	<!-- <script>
+	      // This example requires the Places library. Include the libraries=places
+	      // parameter when you first load the API. For example:
+	      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+	
+	      function initMap() {
+	        var service = new google.maps.places.PlacesService(reviews_container);
+	
+	        service.getDetails({
+	          placeId: 'ChIJPd77BGMcS0ERw1PjTwNPl_Y'
+	        }, function(place, status) {
+	          if (status === google.maps.places.PlacesServiceStatus.OK) {
+	            var i;
+	            for(i = 0; i < place.reviews.length; i++){
+	              var name = place.reviews[i].author_name;
+	              var comment = place.reviews[i].text;
+	              var avatar = place.reviews[i].profile_photo_url;
+	              var time = place.reviews[i].time;
+	              var rating = place.reviews[i].rating;
+	              //console.log(name + '<br>' + avatar + '<br>' + time + '<br>' + rating + '<br>' + comment);
+	
+	              var reviewsContainer = document.getElementById('reviews_container'); // Get reviews container
+	              
+	              var reviewsItem = '<div class="reviews-item">' +
+	                                  '<div class="reviews-item__header">' +
+	                                    '<div class="reviews-item__avatar">' +
+	                                      '<img src="' + avatar + '" alt="">' +
+	                                    '</div>' +
+	                                    '<div class="reviews-item__info">' +
+	                                      '<span class="reviews-item__name">' + name + '</span>' +
+	                                      '<span class="reviews-item__date">' + time + '</span>' +
+	                                    '</div>' +
+	                                  '</div>' +
+	                                  '<div class="reviews-item__comment">' + comment + '</div>' +
+	                                '</div>';
+	
+	
+	              reviewsContainer.insertAdjacentHTML('beforeend', reviewsItem); // Insert unique review item into Reviews container
+	              reviewsContainer.addEventListener('load', console.log('Done'));
+	            };
+	            reviewsSlider();
+	          }
+	
+	        });
+	      }
+	      
+	  function reviewsSlider(){
+	    if (document.documentElement.clientWidth < 1140) {
+	      console.log('start another');
+	      $('#reviews_container').slick({
+	        arrows: false,
+	        dots: false,
+	        autoplay: true,
+	        variableWidth: true,
+	        centerMode: true,
+	        slidesToShow: 1
+	      });
+	      console.log('end another');
+	    } else {
+	      $('#reviews_container').slick('unslick');
+	    }
+	  };
+	  
+	  
+	
+	  window.onresize = function(){
+	    reviewsSlider();
+	  };
+	    </script> -->
+</body>
+
+</html>

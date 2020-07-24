@@ -1,0 +1,407 @@
+/* Fonts */
+
+@font-face{
+	font-family: Roboto;
+	src: url(../assets/fonts/Roboto.ttf);
+}
+@font-face{
+	font-family: Ubuntu;
+	src: url(../assets/fonts/Ubuntu.ttf);
+}
+
+/* General rules */
+
+html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+*,::after,::before {
+	box-sizing:inherit
+}
+body{
+	font-family: Ubuntu;
+	font-size: 16px
+}
+.container {
+	width:100%;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto
+}
+.flex-container{
+	padding: 0 !important;
+}
+section{
+	padding: 30px 0;
+}
+h2.section-title{
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+.section-title span{
+	padding-bottom: 10px;
+	border-bottom: 3px solid #333;
+}
+a{
+	text-decoration: none;
+	color: initial
+}
+a, button{
+	outline: transparent
+}
+
+
+/* Header section */
+
+#header{
+	padding: 0;
+}
+
+/* Navigation menu */
+
+.nav{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #FFE34D;
+	z-index: 10;
+}
+.nav .container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav input{
+	display: none
+}
+#main-nav{
+	width: 100%;
+	margin-left: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav-menu{
+	display: flex;
+	width: 478px;
+	height: 80px;
+	margin: 0;
+	padding-left: 0;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none
+}
+.nav-menu__item{
+	display: flex;
+	height: inherit;
+	justify-content: center;
+	flex-grow: 1;
+	cursor: pointer;
+	position: relative;
+}
+.nav-menu__item::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	opacity: 0;
+	transition: all .2s linear;
+	/*box-shadow: inset 0 60px 0 0 rgba(255,255,255,1);*/
+}
+.nav-menu__item_active,
+.nav-menu__item:hover::before{
+	opacity: 1;
+	height: 100%;
+	/*box-shadow: inset 0 80px 10px 60px rgba(255,255,255,1);*/
+}
+.nav-menu__item a{
+	position: relative;
+}
+nav-menu__item_active,
+.nav-menu__item a::after{
+	content: '';
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	border-bottom: 3px solid #000;
+	transition: all .15s linear;
+	opacity: 0
+}
+.nav-menu__item_active a::after,
+.nav-menu__item a:hover::after{
+	bottom: 20px;
+	opacity: 1
+}
+
+.nav-menu__item a{
+	display: flex;
+	height: inherit;
+	align-items: center;
+}
+
+.tel{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 24px;
+}
+
+.social-block{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100px;
+	height: 36px;	
+}
+
+/* Header Slider */
+
+.header__slider{
+	/*! border: 1px solid red; */
+	height: 100vh;
+	position: relative;
+	top: 80px
+}
+.header__slider .slick-dots{
+	bottom: 20px
+}
+.fullscreen-slider .fullscreen-slider__item{
+	background-size: cover;
+	width: 100%;
+	height: calc(100vh - 80px);
+	font-weight: bold;
+	font-size: 36px;
+	display: flex !important;
+	align-items: center;
+}
+.fullscreen-slider__item_1{
+	background: url(../assets/imgs/header/header_slider_bg_1.jpg) no-repeat;
+}
+.fullscreen-slider__item_2{
+	background: url(../assets/imgs/header/header_slider_bg_2.jpg) no-repeat;
+}
+.fullscreen-slider__item_3{
+	background: url(../assets/imgs/header/header_slider_bg_3.jpg) no-repeat;
+}
+.fullscreen-slider__text{
+	color: #FFE34D;
+}
+.fullscreen-slider__item_3 .fullscreen-slider__text{
+	color: #000
+}
+.header__slider .slick-dots li button:before{
+	font-size: 30px;
+	color: #C4C4C4;
+	opacity: 1;
+}
+.header__slider .slick-dots li{
+	width: 20px;
+	margin: 0 3px;
+}
+.header__slider li.slick-active button:before{
+	font-size: 30px;
+	color:  #FFE34D !important;
+	opacity: 1;
+}
+.header__slider .slick-dots li button:hover:before{
+	opacity: 1;
+	color:  #FFE34D !important;
+}
+
+
+/* Services */
+
+.services{
+	background: #1C1C1C;
+}
+.section-title_light{
+	color: #fff;
+}
+.section-title_light span{
+	border-bottom-color: #fff
+}
+
+
+/* About service */
+
+
+#about{
+	display: flex
+}
+.left-bg,
+.right-bg{
+	width: calc((100% - 1140px) / 2);
+}
+.left-bg{
+	background: url(../assets/imgs/about/phone.png) no-repeat;
+	background-position: right 30%
+}
+.right-bg{
+	background: url(../assets/imgs/about/ipad.png) no-repeat;
+	background-position: left bottom
+}
+.big-logo{
+	display: flex;
+	justify-content: center
+}
+.big-logo img{
+	width: 200px;
+}
+
+.service-description,
+.ask-question,
+.yellow-btn{
+	max-width: 800px;
+	margin: 15px auto;
+	text-align: center;
+}
+.service-description__heading{
+	font-size: 42px;
+}
+.service-description__text{
+	max-width: 700px;
+	margin: 0 auto
+}
+.ask-question .ask-question__text{
+	font-weight: normal;
+	font-size: 38px;
+}
+
+/* Reviews section */
+
+#reviews_container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: space-between;
+}
+.reviews-item{
+	width: 350px; /* 454 */
+	height: 240px; /* 273 */
+	background: #1C1C1C;
+	border: 2px solid #000000;
+	border-radius: 6px;
+	color: #fff;
+	padding: 20px;
+	font-size: 14px;
+	margin: 10px;
+}
+.reviews-item__header{
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px
+}
+.reviews-item__avatar{
+	margin: 0 15px 0 37px;
+}
+.reviews-item__avatar img{
+	border-radius: 100%;
+	border: 3px solid #FFE34D;
+	width: 64px
+}
+
+.reviews-item__info{
+	display: flex;
+	flex-direction: column;
+	height: 40px;
+	justify-content: space-between
+}
+.reviews-item .reviews-item__comment{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	height: 115px;
+}
+
+
+/* Contacts section */
+
+#map{
+	width: 100%;
+	height: 500px;
+	border: 3px solid #FFE34D;
+	border-radius: 6px;
+}
+
+.contacts-info{
+	display: flex;
+	max-width: 900px;
+	margin: 50px auto;
+	justify-content: space-between;
+}
+
+.contacts-item-icon{
+	margin: 0 20px;
+}
+.tel_footer{
+	font-size: 18px;
+	font-weight: normal
+}
+.social-block_footer{
+	margin: 0 auto;
+	width: 150px;
+	height: initial;
+	justify-content: space-between;
+}
+.social-block_footer img{
+	height: 50px;
+}
+.social-block_footer .social-block__vk img{
+	height: 40px
+}
+
+
+/* Footer section */
+
+.footer-info{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 25px;
+	background: #FFE34D;
+	font-size: 12px
+}
+
+
+/* Antiman */
+
+/* Common button styles */
+
+a.button{
+	width: 231px;
+	height: 67px;
+	background: #FFE34D;
+	border: 3px solid #FFE34D;
+	border-radius: 29px;
+	color: #000;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all .2s linear;
+	margin: 0 auto;
+	/*! position: relative; */
+	/*! left: 50%; */
+	/*! transform: translateX(-50%); */
+}
+.yellow-btn .button:hover{
+	border: 3px solid #000
+}
+
+
+/*  FOR DEL */
+#contacts{
+	/*! margin-top: 50px; */
+}
+
+
+
+
+
+
+
+

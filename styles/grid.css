@@ -1,0 +1,196 @@
+.service-name{
+	font-size: 18px;
+	font-weight: bold;
+}
+.service-price{
+	position: absolute;
+	bottom: 0;
+	background: #FFE34D;
+	border-radius: 6px 6px 0 0;
+	height: 40px;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: bold
+}
+.services-slider__item{
+	position: relative;
+	border-radius: 6px;
+	overflow: hidden
+}
+.services-slider__text{
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+	padding: 0 30px;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	color: #FFE34D;
+}
+.services-grid__item{
+	display: flex;
+	background: #DCDCDC;
+	border-radius: 6px;
+	padding-left: 16px;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+@media (max-width: 450px){
+	.services-grid .services-grid__item{
+		/*! max-width: 100%; */
+		margin: 18px 0
+	}
+}
+@media (max-width:600px) {
+	.services-grid{
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		align-items: center;
+		box-sizing: border-box
+	}
+	.services-grid__item{
+		width: 356px;
+		height: 278px;
+		margin: 18px auto
+	}
+	.services-slider{
+		height: initial;
+		padding-left: 0;
+		order: 11
+	}
+}
+@media (min-width: 600px){
+	.services-grid__item{
+		width: 258px;
+		height: 202px;
+	}
+	/* Corrects img display */
+	.services-slider{	
+		overflow: hidden;
+		padding: 0;
+	}
+	.services-slider img{
+		width: 100%;
+		border-radius: 6px;
+	}
+}
+@media (min-width: 600px) and (max-width:992px) {
+	.services-grid{
+		display: grid;
+		grid-template-columns: 258px 258px;
+		grid-gap: 36px;
+		justify-items: center;
+		justify-content: center
+	}
+	.services-slider{
+		height: auto;
+		grid-column: 2 / 3;
+		grid-row: 5 / 7;
+
+		/* Corrects img display */
+		overflow: hidden;
+		padding: 0;
+	}
+
+}
+@media (min-width:993px) {
+	.container {
+		max-width:1140px
+	}
+	.services-grid{
+		display: grid;
+		grid-template-columns: repeat(3, 258px);
+		grid-gap: 36px;
+		justify-content: center
+	}
+	.services-slider{
+		height: initial;
+		padding-left: 0;
+		grid-column: 3 / 4;
+		grid-row: 1 / 3
+	}
+}
+@media (min-width: 1200px){
+	.services-grid{
+		grid-template-columns: repeat(4, 258px);
+		justify-content: space-between
+	}
+	.services-slider{
+		grid-column: 4 / 5;
+		grid-row: 1 / 3
+	}
+}
+
+
+
+
+/****************************************************************************/
+
+.services-grid .service-analysis,
+.services-grid .service-battery,
+.services-grid .service-screen,
+.services-grid .service-case,
+.services-grid .service-charging,
+.services-grid .service-water-recovering,
+.services-grid .service-motherboard,
+.services-grid .service-camera,
+.services-grid .service-individual-service,
+.services-grid .service-software{
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 50%;
+}
+.services-grid .service-camera,
+.services-grid .service-individual-service,
+.services-grid .service-software{
+	background-position: right bottom
+}
+.services-grid .service-case{
+	background-position-x: 85%
+}
+.services-grid .service-charging{
+	background-position: 90% bottom
+}
+.services-grid .service-motherboard{
+	background-position: 
+}
+.services-grid .service-software{
+	background-size: 38%;
+}
+.services-grid .service-analysis{
+	background-image: url(../assets/imgs/services/services_analysis.png);
+}
+.services-grid .service-battery{
+	background-image: url(../assets/imgs/services/services_battery.png);
+}
+.services-grid .service-screen{
+	background-image: url(../assets/imgs/services/services_screen.png);
+}
+.services-grid .service-case{
+	background-image: url(../assets/imgs/services/services_case.png);
+}
+.services-grid .service-charging{
+	background-image: url(../assets/imgs/services/services_charging.png);
+}
+.services-grid .service-water-recovering{
+	background-image: url(../assets/imgs/services/services_water-recovering.png);
+}
+.services-grid .service-motherboard{
+	background-image: url(../assets/imgs/services/services_motherboard.png);
+}
+.services-grid .service-camera{
+	background-image: url(../assets/imgs/services/services_camera.png);
+}
+.services-grid .service-individual-service{
+	background-image: url(../assets/imgs/services/services_individual-services.png);
+}
+.services-grid .service-software{
+	background-image: url(../assets/imgs/services/services_software.png);
+}
+
+
